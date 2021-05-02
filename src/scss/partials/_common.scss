@@ -1,0 +1,69 @@
+.txt_center {
+  text-align: center;
+}
+
+.font_basic {
+  font-size: 14px;
+}
+
+
+
+// margin/padding top
+
+$types: m, p;
+@each $type in $types {
+  @for $i from 1 through 50 {
+    .#{$type}t_#{$i} {
+      @if $type == m {
+        margin-top: 10px * $i;
+      } @else {
+        padding-top: 10px * $i;
+      }
+    }
+  }
+}
+
+// margin/padding bottom
+
+$types: m, p;
+@each $type in $types {
+  @for $i from 1 through 10 {
+    .#{$type}b_#{$i} {
+      @if $type == m {
+        margin-bottom: 5px * $i;
+      } @else {
+        padding-bottom: 5px * $i;
+      }
+    }
+  }
+}
+
+// margin/padding left
+
+$types: m, p;
+@each $type in $types {
+  @for $i from 1 through 15 {
+    .#{$type}l_#{$i} {
+      @if $type == m {
+        margin-left: 5px * $i;
+      } @else {
+        padding-left: 5px * $i;
+      }
+    }
+  }
+}
+
+// margin/padding right
+
+$types: m, p;
+@each $type in $types {
+  @for $i from 1 through 15 {
+    .#{$type}r_#{$i} {
+      @if $type == m {
+        margin-right: 5px * $i;
+      } @else {
+        padding-right: 5px * $i;
+      }
+    }
+  }
+}

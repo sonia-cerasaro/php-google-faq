@@ -1,0 +1,10 @@
+main {
+  width: 100vw;
+  padding-top: 25vh;
+  div {
+    &.main_cont {
+      width: 80vw;
+      margin: 0 auto;
+    }
+  }
+}
